@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f5e9;
+    color: #1B3B2B;
+    line-height: 1.6;
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.top-bar {
+    background-color: #143d33;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 8px 0;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.destaque {
+    color: #e0b04a;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 12px 12%;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5f6f66;
+    font-weight: 500;
+    padding-bottom: 6px;
+}
+
+nav a.here {
+    color: #143d33;
+    border-bottom: 3px solid #c0444f;
+}
+
+.botao-participar {
+    margin-left: 32px;
+    padding: 14px 20px;
+    border: 1px solid #c9c4b5;
+    border-radius: 4px;
+    color: #143d33;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 80px 12% 100px;
+}
+
+.tagline {
+    display: block;
+    color: #c0444f;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    max-width: 900px;
+    margin-bottom: 24px;
+}
+
+.hero h1 span {
+    color: #c0444f;
+}
+
+.hero p {
+    color: #5f6f66;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #1a2d36;
+    color: #f1ede0;
+    padding: 56px 12% 24px;
+}
+
+.footer-topo {
+    display: flex;
+    gap: 64px;
+    padding-bottom: 48px;
+}
+
+.footer-marca {
+    margin-right: auto;
+    max-width: 360px;
+}
+
+.footer-logo {
+    display: inline-block;
+    background-color: #f8f5e9;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.footer-logo img {
+    height: 56px;
+    display: block;
+}
+
+.footer-frase {
+    font-size: 14px;
+    color: #c9d3cf;
+}
+
+.footer-coluna {
+    min-width: 200px;
+}
+
+.footer-coluna h2 {
+    color: #e0b04a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.footer-coluna ul {
+    list-style: none;
+}
+
+.footer-coluna li,
+.footer-coluna p {
+    margin-bottom: 12px;
+}
+
+.footer-coluna a {
+    color: #f1ede0;
+    text-decoration: none;
+}
+
+.footer-base {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 24px;
+    font-size: 13px;
+    color: #9fb0a9;
+}
+
+.iniciativas {
+    padding: 0 12% 80px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 450px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    background: #dde8dc;
+    overflow: hidden;
+}
+
+.imagem {
+    height: 100%;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 70px;
+}
+
+.categoria {
+    color: #c0392b;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.10rem;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.titulo {
+    font-family: Georgia, serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #1a4a3f;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    color: #5a6b63;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.botaoparticipacao {
+    background: #1a4a3f;
+    color: #fff;
+    border: none;
+    padding: 14px 26px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.detalhesparticipacao {
+    margin-top: 24px;
+    padding-left: 16px;
+    border-left: 3px solid #c0392b;
+    max-width: 480px;
+}
+
+.detalhesparticipacao[hidden] {
+    display: none;
+}
+
+.subtcomoparticipar {
+    color: #1a4a3f;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.detalhesparticipacao p {
+    color: #5a6b63;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+@media (min-width: 769px) {
+    .invertido .imagem {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 10px 16px;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 6%;
+    }
+
+    nav {
+        margin-left: 0;
+    }
+
+    nav ul {
+        gap: 16px;
+    }
+
+    .botao-participar {
+        margin-left: 0;
+    }
+
+    .hero {
+        padding: 48px 6% 64px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 40px 6% 24px;
+    }
+
+    .footer-topo {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-base {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .iniciativas {
+        padding: 0 6% 48px;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem {
+        height: 300px;
+    }
+
+    .conteudo {
+        padding: 40px 28px;
+    }
+
+    .titulo {
+        font-size: 2.4rem;
+    }
+}
