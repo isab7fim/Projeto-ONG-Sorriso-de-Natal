@@ -1,0 +1,248 @@
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Garante que a página inteira ocupe toda a largura sem margens nas pontas */
+html, body {
+    width: 100%;
+    background-color: #F8F5E9;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1B2E1F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container central para alinhar o conteúdo restante com boa largura */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Cabeçalho do site ocupando 100% da largura de ponta a ponta */
+header {
+    position: relative; /* Permite posicionar o menu no canto superior direito */
+    background-color: #0F5132;
+    color: rgb(201, 146, 74);
+    padding: 30px 0 0 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: rgb(201, 146, 74);
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 0;
+    color: rgb(201, 146, 74);
+}
+
+/* ================================================= */
+/* MENU DE NAVEGAÇÃO (Canto Superior Direito) */
+/* ================================================= */
+.menu-navegacao {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+/* Estilo dos botões transparentes */
+.menu-navegacao a {
+    background-color: transparent; /* Fundo transparente */
+    color: rgb(201, 146, 74);     /* Cor do texto dourada */
+    border: 2px solid transparent; /* Borda invisível por padrão */
+    padding: 8px 16px;
+    border-radius: 20px;         /* Cantos arredondados */
+    text-decoration: none;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o rato por cima dos botões */
+.menu-navegacao a:hover {
+    background-color: rgba(212, 175, 55, 0.15); /* Leve brilho dourado */
+    border-color: #D4AF37;                      /* Borda dourada acesa */
+    transform: translateY(-2px);                /* Leve elevação */
+    color: #fff;
+}
+
+/* Estilização da Logo */
+img[alt="logo do projeto"] {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+img[alt="logo do projeto"]:hover {
+    transform: scale(1.05);
+}
+
+/* Faixa vermelha esticada de ponta a ponta */
+.faixa-vermelha {
+    border: none;
+    height: 6px; 
+    background-color: hsla(6, 95%, 46%, 0.822); 
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Subtítulos pequenos (Sobre o Projeto / Nossa História) */
+h5 {
+    color: #c0392b; 
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+/* Título Principal */
+h1 {
+    color: #1e3d2f; 
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+/* Subtítulo secundário */
+h2 {
+    color: #0F5132;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Estilização dos Parágrafos */
+p {
+    font-size: 1.05rem;
+    color: #4a5568;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Selo "Desde 2017" alinhado à direita */
+p[align="right"] {
+    font-weight: 600;
+    color: #d4af37; 
+    font-style: italic;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    float: right;
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+h5:nth-of-type(2) {
+    clear: both;
+}
+
+/* Organização do conteúdo principal */
+main {
+    max-width: 1400px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 40px auto 60px;
+    padding: 30px;
+    flex: 1;
+}
+
+/* Estilos dos cartões */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #c71313cc;
+}
+
+section h2 {
+    color: #0F5132;
+    font-size: 24px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Organização dos cartões */
+.cards-container {
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cards-container section {
+    flex: 1;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cards-container section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Rodapé do site */
+footer {
+    background-color: #1B2E1F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+footer p {
+    margin: 8px;
+    color: white;
+}
+
+/* Centralização do link da história */
+.link-historia {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.link-historia a {
+    display: inline-block;
+    background-color: #0F5132;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-historia a:hover {
+    background-color: #1B2E1F;
+    transform: translateY(-3px);
+}
