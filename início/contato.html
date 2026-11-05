@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Contato – Projeto Sorriso de Natal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/contato.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>CAMPANHA DE FIM DE ANO 2026</span>
+        <span class="destaque">PRESENÇA É O PRESENTE QUE FICA.</span>
+    </div>
+
+    <header>
+        <a class="logo" href="index.html" aria-label="Projeto Sorriso de Natal">
+            <img src="img/logo.png" alt="Projeto Sorriso de Natal">
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projeto.html">Projetos</a>
+            <a class="btn-nav here" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero2" id="contato">
+        <i></i>
+        <h1 class="test2">Fale com a gente!!!</h1>
+        <p class="tst">Um gesto pequeno pode ser o maior presente do Natal de uma criança. Escreva para nós e vamos cuidar de cada mensagem com carinho, como quem embrulha um sonho.</p>
+    </section>
+
+    <main class="contato-main">
+        <form class="card form" id="form" novalidate>
+            <h2>Envie sua mensagem</h2>
+            <p class="lead">Do outro lado, tem alguém pronto para ouvir você e transformar sua vontade de ajudar em um sorriso.</p>
+
+            <p class="lead"><strong>Aviso:</strong> este formulário é apenas uma simulação. Nenhuma mensagem é enviada de verdade.</p>
+
+            <div class="field">
+                <label for="nome">Nome completo</label>
+                <input id="nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required minlength="3">
+            </div>
+
+            <div class="row field">
+                <div>
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" required>
+                </div>
+                <div>
+                    <label for="zap">WhatsApp</label>
+                    <input id="zap" name="zap" type="tel" placeholder="(11) 90000-0000" autocomplete="tel">
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option>Quero apadrinhar uma criança</option>
+                    <option>Quero ser voluntário(a)</option>
+                    <option>Dúvidas sobre o projeto</option>
+                    <option>Parcerias e doações</option>
+                    <option>Outro assunto</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="msg">Mensagem</label>
+                <textarea id="msg" name="msg" placeholder="Conte pra gente como você sonha em fazer o Natal de uma criança mais feliz..." required minlength="10"></textarea>
+            </div>
+
+            <label class="check">
+                <input type="checkbox" name="aceite"> Aceito receber o contato do projeto por e-mail ou WhatsApp.
+            </label>
+            
+            <button class="send" type="submit" id="enviar">Enviar mensagem</button>
+            <div class="ok" id="ok" role="status">Mensagem enviada! Entraremos em contato em breve. 🎁</div>
+        </form>
+
+        <aside>
+            <section class="card contacts">
+                <h3>Outras formas de contato</h3>
+                <div class="item">
+                    <div class="ico" style="background:var(--green)"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.4L3 21l4.7-1.2A9 9 0 1 0 12 3z"/></svg></div>
+                    <div><small>WhatsApp</small><span>(11) 91234-5678</span></div>
+                </div>
+                <div class="item">
+                    <div class="ico" style="background:var(--red)"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg></div>
+                    <div><small>E-mail</small><span>contato@sorrisodenatal.org</span></div>
+                </div>
+                <div class="item">
+                    <div class="ico" style="background:var(--brown)"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+                    <div><small>Endereço</small><span>Rua das Estrelas, 123 – Centro, São Paulo – SP</span></div>
+                </div>
+            </section>
+
+            <section class="hug">
+                <i></i>
+                <h3>Um abraço em forma de presente</h3>
+                <p>Ao apadrinhar, você realiza o pedido de Natal de uma criança e mostra a ela que alguém pensou nela, que ela é lembrada e que merece todo o amor do mundo.</p>
+                <a class="btn-gold" href="projeto.html">Conhecer as crianças</a>
+            </section>
+
+            <section class="why">
+                <small>POR QUE AJUDAR?</small>
+                <q>Para você, é um presente. Para uma criança, é a prova de que alguém pensou nela. Um brinquedo, um abraço, um Natal que ela vai guardar no coração para sempre.</q>
+                <p>Apadrinhar leva poucos minutos, mas um sorriso pode durar uma vida inteira. Seja o motivo dele.</p>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-topo">
+            <div class="footer-marca">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Logotipo Projeto Sorriso de Natal">
+                </div>
+                <p class="footer-frase">Uma rede de presença para cada infância.</p>
+            </div>
+
+            <div class="footer-coluna">
+                <h2>NAVEGUE</h2>
+                <ul>
+                    <li><a href="sobre.html">Sobre o projeto</a></li>
+                    <li><a href="projeto.html">Nossos projetos</a></li>
+                    <li><a href="contato.html">Entre em contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h2>FALE COM A GENTE</h2>
+                <p>contato@sorrisodenatal.org</p>
+                <p>Seg–sex, 9h às 17h</p>
+            </div>
+        </div>
+
+        <div class="footer-base">
+            <p>© 2026 Projeto Sorriso de Natal</p>
+            <p>Protótipo acadêmico · Feito com cuidado</p>
+        </div>
+    </footer>
+
+</body>
+</html>
