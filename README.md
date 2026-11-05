@@ -64,7 +64,7 @@ Abra-o no navegador ou utilize a extensão Live Server.
 
 ## Fontes e créditos
 
-Imagens e elementos visuais: [imagen](imagens).
+Imagens e elementos visuais: [imagen](img).
 
 Projeto acadêmico desenvolvido para a disciplina de Fundamentos da Web e Desenvolvimento Front-end.
 
