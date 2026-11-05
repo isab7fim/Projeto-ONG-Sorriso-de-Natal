@@ -2,6 +2,7 @@
 
 | Nome completo do aluno | RGM |
 |---|---|
+| Kamilly Vitória Alves da Silva | 46919431 |
 | Emilly Rodrigues de Souza | 47508248 |
 |Franciele Souza | 47643323 |
 | Isabella Bonfim Reis | 48837423 |
