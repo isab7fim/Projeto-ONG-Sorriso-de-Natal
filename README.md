@@ -61,7 +61,7 @@ Localize o arquivo index.html.
 
 Abra-o no navegador ou utilize a extensão Live Server.
 
-**Ou**, se preferir, acesse diretamente o site pelo link: [Projeto Sorriso de Natal](COLE_AQUI_O_LINK_DO_SITE).
+**Ou**, se preferir, acesse diretamente o site pelo link: [Projeto Sorriso de Natal](https://sorrisodenatal.netlify.app/).
 
 ## Fontes e créditos
 
